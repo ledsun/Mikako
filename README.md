@@ -1,2 +1,2 @@
-# .Net O/R Mapper
+# .Net Not O/R Mapper
 test
