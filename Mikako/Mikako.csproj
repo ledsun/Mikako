@@ -83,7 +83,6 @@
     <Compile Include="Xml\Xmlizabale.cs" />
     <Compile Include="Xml\XMLMaker.cs" />
     <Compile Include="Xml\XmlNodeBuilder.cs" />
-    <Compile Include="Util\PerformanceTimer3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
