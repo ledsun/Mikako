@@ -34,13 +34,15 @@ namespace Com.Luxiar.Mikako.ConfigUtil
         {
             get
             {
-                try
+                ConnectionStringSettings css = ConfigurationManager.ConnectionStrings["DBHelper"];
+                if (css != null && !String.IsNullOrEmpty(css.ConnectionString))
                 {
-                    return GetValueString(MethodBase.GetCurrentMethod().Name.Substring(4));
+
+                    return css.ConnectionString;
                 }
-                catch (InvalidOperationException e)
+                else
                 {
-                    throw new ApplicationException("web.configにDbConnectionStringを指定して下さい。", e);
+                    throw new ApplicationException("web.configのConnectionStringにDBHelerの接続文字列を指定して下さい。");
                 }
             }
         }
