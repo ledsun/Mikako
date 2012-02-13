@@ -17,7 +17,7 @@ app.configファイルやweb.configファイルに記述が必要です
 
 >     <configuration>
 >       <appSettings>
->         <add key="DbConnectionString" value="Data Source=Hoge1; User ID=sa; Password=XXX; Persist Security Info=True;"/>
+>         <add key="DbConnectionString" value="Data Source=Hoge1; User ID=sa; Password=XXX;"/>
 >         <add key="SqlCommandTimeout" value="600"/>
 >       </appSettings>
 >     </configuration>
