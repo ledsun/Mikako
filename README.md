@@ -51,7 +51,7 @@ GridViewやDropDownListのDataSourceに指定する場合はDataSetで取れた�
 
 レコードの行数を取得する場合など、確実に一つの値を返すSQLを実行する際はSelectOneを使います。
 
->    int count = DBHelper.SelectOne("SELECT COUNT(*) FROM T_XXX").Int;
+>     int count = DBHelper.SelectOne("SELECT COUNT(*) FROM T_XXX").Int;
 
 ## Execute ##
 結果を返さないSQLを実行する場合はExceuteを使います。
@@ -59,8 +59,8 @@ GridViewやDropDownListのDataSourceに指定する場合はDataSetで取れた�
 
 ### UPDATE/DELETE ###
 
->    DBHelper.Execute("UPDATE T_XXX SET LEVEL_VAL = 30 WHERE ID = 'abc'");
+>     DBHelper.Execute("UPDATE T_XXX SET LEVEL_VAL = 30 WHERE ID = 'abc'");
 
 ### ストアドプロシージャ ###
 
->    DBHelper.Execute("exec sp_XXX");
+>     DBHelper.Execute("exec sp_XXX");
