@@ -79,7 +79,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Util\WebObjectReverter.cs" />
     <Compile Include="Db\Helper\AbstractDBBridge.cs" />
     <Compile Include="ConfigUtil\Config.cs" />
     <Compile Include="Db\Data\DataRowAccessor.cs" />
