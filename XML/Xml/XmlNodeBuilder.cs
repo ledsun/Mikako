@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Xml;
 
-namespace Com.Luxiar.Mikako.Xml
+namespace Ledsun.Xml
 {
     /// <summary>
     /// 属性つきのXmlNodeを生成するヘルパ

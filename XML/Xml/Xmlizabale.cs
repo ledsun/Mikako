@@ -1,6 +1,6 @@
 using System.Xml;
 
-namespace Com.Luxiar.Mikako.Xml
+namespace Ledsun.Xml
 {
     abstract public class Xmlizabale
     {

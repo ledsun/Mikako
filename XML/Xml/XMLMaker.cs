@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Xml;
 using NUnit.Framework;
 
-namespace Com.Luxiar.Mikako.Xml
+namespace Ledsun.Xml
 {
     public class XMLMaker
     {

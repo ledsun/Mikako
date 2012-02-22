@@ -1,7 +1,7 @@
 ﻿using System.Xml;
 using NUnit.Framework;
 
-namespace Com.Luxiar.Mikako.Xml
+namespace Ledsun.Xml
 {
     /// <summary>
     /// WebService で返却される、成功を表すドキュメントクラス
