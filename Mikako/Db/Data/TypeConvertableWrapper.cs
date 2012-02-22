@@ -3,7 +3,6 @@ using System.Data;
 using System.Data.SqlTypes;
 using System.Globalization;
 using NUnit.Framework;
-using NUnit.Framework.SyntaxHelpers;
 
 namespace Com.Luxiar.Mikako.Db
 {

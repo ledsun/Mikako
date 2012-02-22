@@ -5,7 +5,6 @@ using System.Xml;
 using Com.Luxiar.Mikako.Db;
 using Com.Luxiar.Mikako.Xml;
 using NUnit.Framework;
-using NUnit.Framework.SyntaxHelpers;
 
 namespace Com.Luxiar.Mikako.Util
 {

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using Com.Luxiar.Mikako.ConfigUtil;
 using NUnit.Framework;
-using NUnit.Framework.SyntaxHelpers;
 
 namespace Com.Luxiar.Mikako.Db
 {

@@ -1,6 +1,5 @@
 ﻿using System.Xml;
 using NUnit.Framework;
-using NUnit.Framework.SyntaxHelpers;
 
 namespace Com.Luxiar.Mikako.Xml
 {

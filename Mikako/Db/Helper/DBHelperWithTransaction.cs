@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 
 using NUnit.Framework;
-using NUnit.Framework.SyntaxHelpers;
 
 namespace Com.Luxiar.Mikako.Db
 {
@@ -57,9 +56,9 @@ namespace Com.Luxiar.Mikako.Db
                 DBHelper.Execute(@"
                     IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = N'ClassLibraryTest')
                     CREATE DATABASE [ClassLibraryTest] ON  PRIMARY 
-                        ( NAME = N'ClassLibraryTest', FILENAME = N'C:\WINDOWS\Temp\ClassLibraryTest.mdf' , SIZE = 3072KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+                        ( NAME = N'ClassLibraryTest', FILENAME = N'D:\SQLServer\ClassLibraryTest.mdf' , SIZE = 3072KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
                          LOG ON 
-                        ( NAME = N'ClassLibraryTest_log', FILENAME = N'C:\WINDOWS\Temp\ClassLibraryTest_log.ldf' , SIZE = 1024KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+                        ( NAME = N'ClassLibraryTest_log', FILENAME = N'D:\SQLServer\ClassLibraryTest_log.ldf' , SIZE = 1024KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
                      COLLATE Japanese_CI_AS
                 ");
 

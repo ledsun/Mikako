@@ -5,7 +5,6 @@ using System.Xml;
 using System.Xml.Serialization;
 
 using NUnit.Framework;
-using NUnit.Framework.SyntaxHelpers;
 
 namespace Com.Luxiar.Mikako.Util
 {

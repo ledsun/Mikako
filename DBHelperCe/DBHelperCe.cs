@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Com.Luxiar.Mikako.Db;
 using NUnit.Framework;
-using NUnit.Framework.SyntaxHelpers;
 
 namespace Com.Luxiar.DbCe
 {
