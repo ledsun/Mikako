@@ -2,9 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
+using Ledsun.Mikako.Db;
 using NUnit.Framework;
 
-namespace Ledsun.Mikako.Db
+namespace Ledsun.Util
 {
     //XMLからDataRowAccessorを読み込むクラスです。
     public class DBMock
@@ -51,8 +52,8 @@ namespace Ledsun.Mikako.Db
             [Test]
             public void スキーマとデータをファイルで指定してDataRowAccessorのリストを取得できます()
             {
-                DBMock m = new DBMock("Db/Mock/TEST_SCHEMA.xsd");
-                List<DataRowAccessor> l = m.Select("Db/Mock/TEST_DATA.xml");
+                DBMock m = new DBMock("TEST_SCHEMA.xsd");
+                List<DataRowAccessor> l = m.Select("TEST_DATA.xml");
                 Assert.That(l[0]["ID"].Int, Is.EqualTo(81));
                 Assert.That(l[0]["NAME"].String, Is.EqualTo("ABCDEFG"));
                 Assert.That(l[0]["VALUE"].Int, Is.EqualTo(100));
@@ -79,7 +80,7 @@ namespace Ledsun.Mikako.Db
             [ExpectedException(typeof(ArgumentException), ExpectedMessage = "データファイルを指定して下さい。")]
             public void データファイルは空ではダメです()
             {
-                DBMock m = new DBMock("Db/Mock/TEST_SCHEMA.xsd");
+                DBMock m = new DBMock("TEST_SCHEMA.xsd");
                 m.Select("");
             }
 
@@ -87,7 +88,7 @@ namespace Ledsun.Mikako.Db
             [ExpectedException(typeof(ArgumentException), ExpectedMessage = "データファイルがありません。")]
             public void データファイルがあること()
             {
-                DBMock m = new DBMock("Db/Mock/TEST_SCHEMA.xsd");
+                DBMock m = new DBMock("TEST_SCHEMA.xsd");
                 m.Select("aaaaa");
             }
         }

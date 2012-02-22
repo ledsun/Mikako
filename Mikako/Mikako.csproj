@@ -72,13 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigUtil\ConfigValue.cs" />
-    <Compile Include="Db\Mock\DBMock.cs" />
-    <Compile Include="Db\Mock\TEST_SCHEMA.Designer.cs">
-      <DependentUpon>TEST_SCHEMA.xsd</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="Db\Helper\AbstractDBBridge.cs" />
     <Compile Include="ConfigUtil\Config.cs" />
     <Compile Include="Db\Data\DataRowAccessor.cs" />
@@ -92,25 +85,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.config" />
-    <Content Include="Db\Mock\TEST_DATA.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Db\Mock\TEST_SCHEMA.xsc">
-      <DependentUpon>TEST_SCHEMA.xsd</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Db\Mock\TEST_SCHEMA.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TEST_SCHEMA.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Db\Mock\TEST_SCHEMA.xss">
-      <DependentUpon>TEST_SCHEMA.xsd</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
