@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Com.Luxiar.Mikako.ConfigUtil;
+using Ledsun.Mikako.ConfigUtil;
 using NUnit.Framework;
 
-namespace Com.Luxiar.Mikako.Db
+namespace Ledsun.Mikako.Db
 {
     //複数のDBを使い分けたくなった場合に、新しいクラスを作って置き換え文字列を変更してください。
     public class DBSqlStatement : SqlStatement

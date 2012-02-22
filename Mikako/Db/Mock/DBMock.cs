@@ -4,7 +4,7 @@ using System.Data;
 using System.IO;
 using NUnit.Framework;
 
-namespace Com.Luxiar.Mikako.Db
+namespace Ledsun.Mikako.Db
 {
     //XML‚©‚çDataRowAccessor‚ğ“Ç‚İ‚ŞƒNƒ‰ƒX‚Å‚·B
     public class DBMock

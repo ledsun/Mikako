@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlServerCe;
-using Com.Luxiar.Mikako.Db;
+using Ledsun.Mikako.Db;
 
-namespace Com.Luxiar.DbCe
+namespace Ledsun.DbCe
 {
     public class DBBridgeForSqlServerCompact : AbstractDBBridge
     {

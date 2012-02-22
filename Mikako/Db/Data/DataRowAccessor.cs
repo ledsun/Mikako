@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 
 using NUnit.Framework;
 
-namespace Com.Luxiar.Mikako.Db
+namespace Ledsun.Mikako.Db
 {
     /// <summary>
     /// DataRowオブジェクトの各列の値をTypeConvertableWrapperに変換して取得するラッパー。

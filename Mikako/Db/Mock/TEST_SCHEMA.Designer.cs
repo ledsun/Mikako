@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Com.Luxiar.Mikako.Db.Mock {
+namespace Ledsun.Mikako.Db.Mock {
     
     
     /// <summary>

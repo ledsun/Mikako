@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
-using Com.Luxiar.Mikako.ConfigUtil;
+using Ledsun.Mikako.ConfigUtil;
 
-namespace Com.Luxiar.DbCe
+namespace Ledsun.DbCe
 {
     internal class Config
     {

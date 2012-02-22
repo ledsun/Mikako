@@ -1,10 +1,9 @@
 using System;
-using System.Data;
 using System.Data.SqlTypes;
 using System.Globalization;
 using NUnit.Framework;
 
-namespace Com.Luxiar.Mikako.Db
+namespace Ledsun.Mikako.Db
 {
     /// <summary>
     /// 型変換機能を持つヘルパークラス

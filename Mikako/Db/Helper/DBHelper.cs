@@ -4,7 +4,7 @@ using System.Data;
 
 using NUnit.Framework;
 
-namespace Com.Luxiar.Mikako.Db
+namespace Ledsun.Mikako.Db
 {
     /// <summary>
     /// DBアクセス用のユーティリティクラスです。

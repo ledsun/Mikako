@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Com.Luxiar.Mikako.Db;
+using Ledsun.Mikako.Db;
 using NUnit.Framework;
 
-namespace Com.Luxiar.DbCe
+namespace Ledsun.DbCe
 {
     public class DBHelperCe
     {

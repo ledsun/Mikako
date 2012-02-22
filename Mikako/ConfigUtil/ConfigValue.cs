@@ -1,6 +1,6 @@
 using System.Configuration;
 
-namespace Com.Luxiar.Mikako.ConfigUtil
+namespace Ledsun.Mikako.ConfigUtil
 {
     public static class ConfigValue
     {

@@ -2,7 +2,7 @@ using System;
 using System.Configuration;
 using System.Reflection;
 
-namespace Com.Luxiar.Mikako.ConfigUtil
+namespace Ledsun.Mikako.ConfigUtil
 {
     //XXX.Configの設定値を読み取るクラスです。
     //各プロジェクトごとにConfigクラスを丸ごとコピーし

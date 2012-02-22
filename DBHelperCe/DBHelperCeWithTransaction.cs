@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Com.Luxiar.Mikako.Db;
+using Ledsun.Mikako.Db;
 
-namespace Com.Luxiar.DbCe
+namespace Ledsun.DbCe
 {
     public class DBHelperCeWithTransaction : IDisposable
     {
