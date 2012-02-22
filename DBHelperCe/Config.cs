@@ -17,6 +17,11 @@ namespace Com.Luxiar.DbCe
             {
                 get { return GetValueString(MethodBase.GetCurrentMethod().Name.Substring(4)); }
             }
+
+            public int SqlCeCommandTimeout
+            {
+                get { return GetValueInt(MethodBase.GetCurrentMethod().Name.Substring(4)); }
+            }
         }
     }
 }

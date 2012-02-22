@@ -3,8 +3,8 @@ using System.Data;
 using System.Reflection;
 using System.Xml;
 using Com.Luxiar.Mikako.Db;
-using Com.Luxiar.Mikako.Xml;
 using NUnit.Framework;
+using Ledsun.Xml;
 
 namespace Ledsun.Util
 {

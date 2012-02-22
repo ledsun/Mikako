@@ -22,6 +22,42 @@ namespace Com.Luxiar.Mikako.ConfigUtil
             //{
             //    get { return GetValueString(MethodBase.GetCurrentMethod().Name.Substring(4)); }
             //}
+            public string DbConnectionString
+            {
+                get
+                {
+                    ConnectionStringSettings css = ConfigurationManager.ConnectionStrings["DBHelper"];
+                    if (css != null && !String.IsNullOrEmpty(css.ConnectionString))
+                    {
+
+                        return css.ConnectionString;
+                    }
+                    else
+                    {
+                        throw new ApplicationException("web.configのConnectionStringにDBHelerの接続文字列を指定して下さい。");
+                    }
+                }
+            }
+
+            public string DBPrefix
+            {
+                get { return GetValueString(MethodBase.GetCurrentMethod().Name.Substring(4)); }
+            }
+
+            public int SqlCommandTimeout
+            {
+                get
+                {
+                    try
+                    {
+                        return GetValueInt(MethodBase.GetCurrentMethod().Name.Substring(4));
+                    }
+                    catch
+                    {
+                        return 30;
+                    }
+                }
+            }
         }
     }
 
@@ -29,58 +65,6 @@ namespace Com.Luxiar.Mikako.ConfigUtil
     public class ConfigValueBase
     {
         private static AppSettingsReader _reader = new AppSettingsReader();
-
-        public string DbConnectionString
-        {
-            get
-            {
-                ConnectionStringSettings css = ConfigurationManager.ConnectionStrings["DBHelper"];
-                if (css != null && !String.IsNullOrEmpty(css.ConnectionString))
-                {
-
-                    return css.ConnectionString;
-                }
-                else
-                {
-                    throw new ApplicationException("web.configのConnectionStringにDBHelerの接続文字列を指定して下さい。");
-                }
-            }
-        }
-
-        public string DBPrefix
-        {
-            get { return GetValueString(MethodBase.GetCurrentMethod().Name.Substring(4)); }
-        }
-
-        public int SqlCommandTimeout
-        {
-            get
-            {
-                try
-                {
-                    return GetValueInt(MethodBase.GetCurrentMethod().Name.Substring(4));
-                }
-                catch
-                {
-                    return 30;
-                }
-            }
-        }
-
-        public int SqlCeCommandTimeout
-        {
-            get { return GetValueInt(MethodBase.GetCurrentMethod().Name.Substring(4)); }
-        }
-
-        public int PerfomanceTimerThreshold
-        {
-            get { return GetValueInt(MethodBase.GetCurrentMethod().Name.Substring(4)); }
-        }
-
-        public bool LogOutput
-        {
-            get { return GetValueBool(MethodBase.GetCurrentMethod().Name.Substring(4)); }
-        }
 
         #region protected
         protected string GetValueString(string arg)

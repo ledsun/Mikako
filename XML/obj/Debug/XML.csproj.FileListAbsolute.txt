@@ -1,9 +1,0 @@
-C:\Users\shigeru.nakajima\Mikako\XML\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\shigeru.nakajima\Mikako\XML\bin\Debug\XML.dll
-C:\Users\shigeru.nakajima\Mikako\XML\bin\Debug\XML.pdb
-C:\Users\shigeru.nakajima\Mikako\XML\bin\Debug\nunit.framework.dll
-C:\Users\shigeru.nakajima\Mikako\XML\bin\Debug\nunit.mocks.dll
-C:\Users\shigeru.nakajima\Mikako\XML\bin\Debug\pnunit.framework.dll
-C:\Users\shigeru.nakajima\Mikako\XML\bin\Debug\nunit.framework.xml
-C:\Users\shigeru.nakajima\Mikako\XML\obj\Debug\XML.dll
-C:\Users\shigeru.nakajima\Mikako\XML\obj\Debug\XML.pdb

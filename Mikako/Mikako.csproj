@@ -88,11 +88,6 @@
     <Compile Include="Db\Helper\SqlCommandUtil.cs" />
     <Compile Include="Db\SqlStatement.cs" />
     <Compile Include="Db\Data\TypeConvertableWrapper.cs" />
-    <Compile Include="Xml\ErrorDocument.cs" />
-    <Compile Include="Xml\SuccessDocument.cs" />
-    <Compile Include="Xml\Xmlizabale.cs" />
-    <Compile Include="Xml\XMLMaker.cs" />
-    <Compile Include="Xml\XmlNodeBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

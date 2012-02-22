@@ -59,6 +59,10 @@
       <Project>{AEE0051E-513A-4657-82F8-0343A670C0C0}</Project>
       <Name>Mikako</Name>
     </ProjectReference>
+    <ProjectReference Include="..\XML\XML.csproj">
+      <Project>{7A9BE471-6630-41F0-963E-DC2F25C0D6B8}</Project>
+      <Name>XML</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.config" />
