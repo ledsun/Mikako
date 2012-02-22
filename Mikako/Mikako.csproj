@@ -85,7 +85,6 @@
     <Compile Include="Db\Helper\DBBridgeForSqlServer.cs" />
     <Compile Include="Db\Helper\DBHelper.cs" />
     <Compile Include="Db\Helper\DBHelperWithTransaction.cs" />
-    <Compile Include="Util\DBMapper.cs" />
     <Compile Include="Db\Helper\SqlCommandUtil.cs" />
     <Compile Include="Db\SqlStatement.cs" />
     <Compile Include="Db\Data\TypeConvertableWrapper.cs" />

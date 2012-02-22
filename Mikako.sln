@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mikako", "Mikako\Mikako.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBHelperCe", "DBHelperCe\DBHelperCe.csproj", "{21FEDC30-A6E8-46E6-AA27-4F5CEF4D2EC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMapper", "DBMapper\DBMapper.csproj", "{682E078F-630A-40FF-A8A1-37E0082C8BD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{21FEDC30-A6E8-46E6-AA27-4F5CEF4D2EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21FEDC30-A6E8-46E6-AA27-4F5CEF4D2EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21FEDC30-A6E8-46E6-AA27-4F5CEF4D2EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{682E078F-630A-40FF-A8A1-37E0082C8BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682E078F-630A-40FF-A8A1-37E0082C8BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682E078F-630A-40FF-A8A1-37E0082C8BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682E078F-630A-40FF-A8A1-37E0082C8BD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

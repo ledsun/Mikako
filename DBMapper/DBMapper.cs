@@ -6,7 +6,7 @@ using Com.Luxiar.Mikako.Db;
 using Com.Luxiar.Mikako.Xml;
 using NUnit.Framework;
 
-namespace Com.Luxiar.Mikako.Util
+namespace Ledsun.Util
 {
     //フィールドがPKであると示する属性です。
     [AttributeUsage(AttributeTargets.Field)]
