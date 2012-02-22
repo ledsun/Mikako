@@ -26,7 +26,7 @@ namespace Ledsun.Mikako.ConfigUtil
             {
                 get
                 {
-                    ConnectionStringSettings css = ConfigurationManager.ConnectionStrings["DBHelper"];
+                    var css = ConfigurationManager.ConnectionStrings["DBHelper"];
                     if (css != null && !String.IsNullOrEmpty(css.ConnectionString))
                     {
 

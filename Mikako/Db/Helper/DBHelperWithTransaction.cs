@@ -41,6 +41,11 @@ namespace Ledsun.Mikako.Db
             return _bridg.SelectOne(sql);
         }
 
+        public System.Data.DataSet SelectDataSet(string sql)
+        {
+            return _bridg.SelectDataSet(sql);
+        }
+
         public void Dispose()
         {
             _bridg.Dispose();

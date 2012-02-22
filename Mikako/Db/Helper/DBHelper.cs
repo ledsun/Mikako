@@ -27,36 +27,48 @@ namespace Ledsun.Mikako.Db
         /// UPDATE,DELETEÇ»Ç«ÇÃåãâ Çï‘Ç≥Ç»Ç¢SQLÇé¿çsÇµÇ‹Ç∑ÅB
         /// </summary>
         /// <param name="sql">é¿çsÇ∑ÇÈSQLï∂éöóÒ</param>
-        public static int Execute(string sql)
+        public static int Execute(string sql, DBHelperWithTransaction tran = null)
         {
-            using (DBBridgeForSqlServer db = new DBBridgeForSqlServer())
-            {
+            return tran == null ? Execute(sql) : tran.Execute(sql);
+        }
+
+        public static List<DataRowAccessor> Select(string sql, DBHelperWithTransaction tran = null)
+        {
+            return tran == null ? Select(sql) : tran.Select(sql);
+        }
+
+        public static TypeConvertableWrapper SelectOne(string sql, DBHelperWithTransaction tran = null)
+        {
+            return tran == null ? SelectOne(sql) : tran.SelectOne(sql);
+        }
+
+        public static DataSet SelectDataSet(string sql, DBHelperWithTransaction tran = null)
+        {
+            return tran == null ? SelectDataSet(sql) : tran.SelectDataSet(sql);
+        }
+
+        private static int Execute(string sql)
+        {
+            using (var db = new DBBridgeForSqlServer())
                 return db.Execute(sql);
-            }
         }
 
-        public static List<DataRowAccessor> Select(string sql)
+        private static List<DataRowAccessor> Select(string sql)
         {
-            using (DBBridgeForSqlServer db = new DBBridgeForSqlServer())
-            {
+            using (var db = new DBBridgeForSqlServer())
                 return db.Select(sql);
-            }
         }
 
-        public static TypeConvertableWrapper SelectOne(string sql)
+        private static TypeConvertableWrapper SelectOne(string sql)
         {
-            using (DBBridgeForSqlServer db = new DBBridgeForSqlServer())
-            {
+            using (var db = new DBBridgeForSqlServer())
                 return db.SelectOne(sql);
-            }
         }
 
-        public static DataSet SelectDataSet(string sql)
+        private static DataSet SelectDataSet(string sql)
         {
-            using (DBBridgeForSqlServer db = new DBBridgeForSqlServer())
-            {
+            using (var db = new DBBridgeForSqlServer())
                 return db.SelectDataSet(sql);
-            }
         }
 
         #region TEST
@@ -66,14 +78,14 @@ namespace Ledsun.Mikako.Db
             [Test]
             public void SelectDataSet()
             {
-                DataSet ds = DBHelper.SelectDataSet("SELECT 3");
+                var ds = DBHelper.SelectDataSet("SELECT 3");
                 Assert.That((int)ds.Tables[0].Rows[0][0], Is.EqualTo(3));
             }
 
             [Test]
             public void SelectOneÇ≈DBNullÇÃéûÇÕ0Ç™ï‘ÇÈ()
             {
-                TypeConvertableWrapper t = DBHelper.SelectOne("SELECT ID FROM ( SELECT 1 ID ) A WHERE ID = 0");
+                var t = DBHelper.SelectOne("SELECT ID FROM ( SELECT 1 ID ) A WHERE ID = 0");
                 Assert.That(t.Int, Is.EqualTo(0));
             }
 

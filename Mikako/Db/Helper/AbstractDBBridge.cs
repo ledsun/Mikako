@@ -51,7 +51,7 @@ namespace Ledsun.Mikako.Db
             if (String.IsNullOrEmpty(sql))
                 throw new ArgumentException(SQL_SHOULD_NOT_NULL_OR_EMPTY);
 
-            IDbDataAdapter dataAdapter = CreateAdapter(sql, _connection);
+            var dataAdapter = CreateAdapter(sql, _connection);
             SetCommadParameter(dataAdapter);
             return DbCommandUtil.SelectFromDataAdapter(dataAdapter);
         }
@@ -61,7 +61,7 @@ namespace Ledsun.Mikako.Db
             if (String.IsNullOrEmpty(sql))
                 throw new ArgumentException(SQL_SHOULD_NOT_NULL_OR_EMPTY);
 
-            IDbDataAdapter dataAdapter = CreateAdapter(sql, _connection);
+            var dataAdapter = CreateAdapter(sql, _connection);
             SetCommadParameter(dataAdapter);
             return DbCommandUtil.SelectFromDataAdapterDataSet(dataAdapter);
         }
