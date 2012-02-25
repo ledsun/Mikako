@@ -8,7 +8,7 @@ namespace Ledsun.Mikako.Db
 {
     /// <summary>
     /// DBアクセス用のユーティリティクラスです。
-    /// 実行にはconfigファイルにDbConnectionStringを設定する必要があります。
+    /// 実行にはconfigファイルにconnectionStringにDBHelperという名前で接続文字列を設定する必要があります。
     /// SQLの生成にはSqlStatementの使用を想定していますが、ただの文字列でも実行可能です。
     /// </summary>
     /// <example>

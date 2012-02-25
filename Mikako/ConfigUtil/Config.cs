@@ -34,7 +34,7 @@ namespace Ledsun.Mikako.ConfigUtil
                     }
                     else
                     {
-                        throw new ApplicationException("web.configのConnectionStringにDBHelerの接続文字列を指定して下さい。");
+                        throw new ApplicationException("configファイルのConnectionStringにDBHelerの接続文字列を指定して下さい。");
                     }
                 }
             }
