@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Ledsun.Mikako.Db.Mock {
+namespace Ledsun.Alhambra.Db.Mock {
     
     
     /// <summary>

@@ -1,8 +1,8 @@
 using System.Data;
 using System.Data.SqlClient;
-using Ledsun.Mikako.ConfigUtil;
+using Ledsun.Alhambra.ConfigUtil;
 
-namespace Ledsun.Mikako.Db
+namespace Ledsun.Alhambra.Db
 {
     public class DBBridgeForSqlServer : AbstractDBBridge
     {

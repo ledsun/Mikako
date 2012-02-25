@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using Ledsun.Mikako.ConfigUtil;
+using Ledsun.Alhambra.ConfigUtil;
 
 namespace Ledsun.DbCe
 {

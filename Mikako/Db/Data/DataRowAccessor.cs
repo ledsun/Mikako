@@ -3,7 +3,7 @@ using System.Data;
 
 using NUnit.Framework;
 
-namespace Ledsun.Mikako.Db
+namespace Ledsun.Alhambra.Db
 {
     /// <summary>
     /// DataRowオブジェクトの各列の値をTypeConvertableWrapperに変換して取得するラッパー。

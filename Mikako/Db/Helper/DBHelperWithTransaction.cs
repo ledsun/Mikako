@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using NUnit.Framework;
 
-namespace Ledsun.Mikako.Db
+namespace Ledsun.Alhambra.Db
 {
     //Transaction—L‚è‚Ì•¡”SQLÀs—p
     public class DBHelperWithTransaction : IDisposable

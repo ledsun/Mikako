@@ -4,7 +4,7 @@ using System.Data;
 
 using NUnit.Framework;
 
-namespace Ledsun.Mikako.Db
+namespace Ledsun.Alhambra.Db
 {
     /// <summary>
     /// DBアクセス用のユーティリティクラスです。

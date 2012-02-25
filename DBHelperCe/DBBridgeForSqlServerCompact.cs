@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlServerCe;
-using Ledsun.Mikako.Db;
+using Ledsun.Alhambra.Db;
 
 namespace Ledsun.DbCe
 {
